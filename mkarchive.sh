@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf archive
+
 number=0 git rev-list master | while read rev; do
   fmt_num=$(printf -- '%03d' $number)
   mkdir -p archive/$fmt_num
